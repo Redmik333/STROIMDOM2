@@ -4,15 +4,27 @@ module.exports = {
     content: ["./index.html", "./src/**/*.{ts,tsx,js,jsx}"],
   theme: {
   	extend: {
-      fontFamily: {
-        inter: ['var(--font-inter)'],
-      },
+  		fontFamily: {
+  			heading: ['var(--font-heading)'],
+  			body: ['var(--font-body)'],
+  		},
+  		letterSpacing: {
+  			'empire': '0.15em',
+  			'wide-body': '0.02em',
+  			'micro': '0.1em',
+  		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
   		colors: {
+  			empire: {
+  				graphite: '#1A1A1A',
+  				pearl: '#F5F5F5',
+  				gold: '#D4AF37',
+  				fog: '#2A2A2A',
+  			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -72,11 +84,11 @@ module.exports = {
   			'accordion-up': {
   				from: { height: 'var(--radix-accordion-content-height)' },
   				to: { height: '0' }
-  			}
+  			},
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
+  			'accordion-up': 'accordion-up 0.2s ease-out',
   		}
   	}
   },

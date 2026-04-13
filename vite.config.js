@@ -4,6 +4,9 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  // GitHub Pages serves the app from /<repo>/, so we must set the base path.
+  // If your repository name differs, replace "gorizont-emperia" accordingly.
+  base: '/gorizont-emperia/',
   logLevel: 'error', // Suppress warnings, only show errors
   plugins: [
     base44({
