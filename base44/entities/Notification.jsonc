@@ -1,0 +1,37 @@
+{
+  "name": "Notification",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "\u0417\u0430\u0433\u043e\u043b\u043e\u0432\u043e\u043a"
+    },
+    "message": {
+      "type": "string",
+      "title": "\u0421\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435"
+    },
+    "type": {
+      "type": "string",
+      "title": "\u0422\u0438\u043f",
+      "enum": [
+        "salary",
+        "purchase",
+        "stage",
+        "comment",
+        "system"
+      ]
+    },
+    "house_name": {
+      "type": "string",
+      "title": "\u0414\u043e\u043c"
+    },
+    "is_read": {
+      "type": "boolean",
+      "title": "\u041f\u0440\u043e\u0447\u0438\u0442\u0430\u043d\u043e"
+    }
+  },
+  "required": [
+    "title",
+    "type"
+  ]
+}
